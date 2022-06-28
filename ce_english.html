@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Chaos Engineering</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/benji.css">
+
+	<!-- Theme used for syntax highlighting of code-->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section class="flex-container"
+				 data-markdown="md-files/en/welcome.md"
+				 data-background-image="pictures/WJWexaE.png">
+		</section>
+        <section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/story1.md"
+                     data-background-image="pictures/production.jpg">
+            </section>
+            <section data-background-size="contain" data-background-image="pictures/ChaosEngineering/Folie1.PNG"></section>
+            <section data-background-size="contain" data-background-image="pictures/ChaosEngineering/Folie2.PNG"></section>
+            <section data-background-size="contain" data-background-image="pictures/ChaosEngineering/Folie3.PNG"></section>
+            <section data-background-size="contain" data-background-image="pictures/ChaosEngineering/Folie4.PNG"></section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/story2.md"
+                     data-background-image="pictures/doubts.jpg">
+            </section>
+            <section class="flex-container"S
+                     data-markdown="md-files/en/story3.md"
+                     data-background-image="pictures/doubts.jpg"
+                     style="color:whitesmoke">
+            </section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/story4.md"
+                     data-background-image="pictures/burning_prod.png"
+                     style="color:whitesmoke">
+            </section>
+        </section>
+        <section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/ce-plot.md"
+                     data-background-image="pictures/value.jpg"
+                     style="color:whitesmoke">
+            </section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/ce-plot2.md"
+                     data-background-image="pictures/money.jpg"
+                     style="color:whitesmoke">
+            </section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/circle_of_death.md"
+                     data-background-image="pictures/cod.jpg"
+                     style="color:whitesmoke">
+            </section>
+        </section>
+        <section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/chaos_engineering1.md"
+                     data-background-image="pictures/jS8OgKg.png"
+                     style="color:whitesmoke">
+            </section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/chaos_engineering2.md"
+                     data-background-image="pictures/J9SD4CA.png"
+                     style="color:whitesmoke">
+            </section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/chaos_engineering3.md"
+                     data-background-image="pictures/K2RtveF.png"
+                     style="color:whitesmoke">
+            </section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/chaos_engineering4.md"
+                     data-background-image="pictures/Mi4cpqI.png"
+                     style="color:whitesmoke">
+            </section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/chaos_engineering5.md"
+                     data-background-image="pictures/7oHtqRm.png"
+                     style="color:whitesmoke;text-align: left">
+            </section>
+        </section>
+        <section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/facallities.md"
+                     data-background-image="pictures/irrtum.jpg"
+                     data-background-color="#ffffff" style="color:whitesmoke">
+            </section>
+            <section data-background-image="pictures/Architektur/Folie1.PNG"
+                     data-background-size="contain"
+                     data-background-color="#ffffff" style="color:whitesmoke">
+            </section>
+            <section data-background-image="pictures/Architektur/Folie2.PNG"
+                     data-background-size="contain"
+                     data-background-color="#ffffff" style="color:whitesmoke">
+            </section>
+            <section data-background-size="contain" data-background-image="pictures/chaos_process.jpg"></section>
+            <section data-background-image="pictures/Architektur/Folie3.PNG"
+                     data-background-size="contain"
+                     data-background-color="#ffffff" style="color:whitesmoke">
+            </section>
+        </section>
+        <section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/pitch_murphy.md"
+                     data-background-image="pictures/murphys-gesetz.jpg"
+                     style="color:whitesmoke">
+            </section>
+            <section class="flex-container"
+                     data-markdown="md-files/en/pitch_stability.md"
+                     data-background-image="pictures/zen.jpg"
+                     style="color:whitesmoke">
+            </section>
+        </section>
+	</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            { src: 'plugin/anything/anything.js' },
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+</script>
+</body>
+</html>
